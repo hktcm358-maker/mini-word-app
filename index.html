@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ミニ英単語クイズ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card">
+    <h1>ミニ英単語クイズ</h1>
+    <p class="subtitle">4ファイル分割テスト版</p>
+
+    <p id="count">0 / 0</p>
+
+    <div class="box">
+      <p class="label">日本語ヒント</p>
+      <p id="meaning">ここに意味が出ます</p>
+    </div>
+
+    <div class="box">
+      <p class="label">例文</p>
+      <p id="phrase">ここに例文が出ます</p>
+    </div>
+
+    <div id="answer-box" class="box answer hidden">
+      <p class="label">答え</p>
+      <p id="word"></p>
+    </div>
+
+    <button id="btn-show">答えを見る</button>
+    <button id="btn-next">次の問題へ</button>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
